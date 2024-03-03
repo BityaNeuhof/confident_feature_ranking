@@ -1,0 +1,28 @@
+p:
+  - 10
+  - 30
+  - 50
+model_type:
+  - xgb
+  - rf
+n:
+  - 100
+  - 500
+  - 1000
+  - 3000
+func_ind:
+  - 1
+  - 2
+  - 3
+methods:
+  - ['holm', 'min_p', 'icranks']
+rep_bootstrap:
+  - 2500
+rep:
+  - 100
+alpha:
+  - 0.1
+model_config_path:
+  - results/low_variance_FI/SHAP/models/
+true_importance_path:
+  - results/low_variance_FI/SHAP/
